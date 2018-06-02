@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wcbj"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.45"
+            android:background="#00000000" >
+
+            <TextView
+                android:id="@+id/listview_wc_item_text_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/listview_wc_item_text_image"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="21dp"
+                android:text="0.0.0.0.0"
+                android:textColor="#60000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/listview_wc_item_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="0.0.0.0.0"
+                android:textColor="#60000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/wc_details_text_dy"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/b_dy" />
+
+            <ImageView
+                android:id="@+id/wc_details_text_jb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/wc_details_text_dy"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/wc_details_text_dy"
+                android:clickable="true"
+                android:src="@drawable/b_jb" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_wc_xq_jb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/red"
+        android:drawableLeft="@drawable/zhuye"
+        android:padding="5dp"
+        android:text="警告:您上报的洗手间被举报\n举报原因:xxxxxx"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="........................................................................................................." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/cancel"
+            android:src="@drawable/b_wz" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/wc_d_dz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/cancel" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/wc_d_text_dz_xg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:text="修改"
+            android:textColor="@color/cancel"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="........................................................................................................." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/cancel"
+            android:src="@drawable/b_cz" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/cancel" />
+        </LinearLayout>
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:text="修改"
+            android:textColor="@color/cancel"
+            android:textSize="18sp" /> -->
+        <Switch
+            android:id="@+id/wc_d_sw_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="有"
+            android:visibility="gone"
+            android:textOff="无" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="........................................................................................................." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/cancel"
+            android:src="@drawable/b_ss" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/cancel" />
+        </LinearLayout>
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:text="修改"
+            android:textColor="@color/cancel"
+            android:textSize="18sp" /> -->
+
+        <Switch
+            android:id="@+id/wc_d_sw_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="有"
+            android:visibility="gone"
+            android:textOff="无" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="........................................................................................................." />
+
+    <EditText
+        android:id="@+id/wc_details_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此评价"
+        android:textColor="#fff" >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="发送"
+        android:textColor="@color/style" />
+
+</LinearLayout>

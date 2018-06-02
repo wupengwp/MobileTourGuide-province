@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="券码:"
+        android:layout_gravity="center_vertical"
+        android:textColor="#fff"/>
+    <TextView 
+        android:id="@+id/activity_refund_listview_item_text"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#fff"/>
+    
+    
+   <LinearLayout
+                        android:id="@+id/linear_phone_tt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/btn_subtraction_tt"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/order_from_btn_selector"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:id="@+id/numbersd_tt"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/shape_spot"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#333333"
+                            android:textSize="11sp" />
+
+                        <ImageView
+                            android:id="@+id/btn_add_tt"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_addorder_selector"
+                            android:clickable="true"
+                            android:padding="5dp" />
+                    </LinearLayout>
+</LinearLayout>

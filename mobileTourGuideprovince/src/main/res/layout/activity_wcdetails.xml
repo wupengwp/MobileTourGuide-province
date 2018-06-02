@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/activity_exercisedetail_image_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:padding="10dp"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="WC详情"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/wc_detail_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wc_btn_xg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</FrameLayout>

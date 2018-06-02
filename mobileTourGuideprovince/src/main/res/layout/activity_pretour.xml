@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	        <com.jiagu.mobile.tourguide.widget.ImgMapView
+	            android:id="@+id/my_map_view"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:scaleType="matrix" />
+	
+            <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:background="#FEB130"
+		        android:orientation="horizontal" >
+		        
+	            <TextView
+		            android:id="@+id/tourist_state_first"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_margin="0dp"
+		            android:paddingTop="15dp"
+		        	android:paddingBottom="15dp"	
+		            android:background="#FEB130"
+		            android:clickable="true"
+		            android:gravity="center"
+		            android:text="导游首页"
+		            android:textColor="@color/white" />
+	            
+	             <View
+	                android:layout_width="1dp"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="bottom"
+	                android:background="@color/light_gray" />
+		        
+		        <TextView
+		            android:id="@+id/tourist_state_realtour"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="0dp"
+		            android:layout_weight="1"
+		            android:background="#FEB130"
+		            android:clickable="true"
+		            android:gravity="center"
+		            android:paddingTop="15dp"
+		        	android:paddingBottom="15dp"
+		            android:text="实时导游"
+		            android:textColor="@color/white" />
+		        
+	            <View
+	                android:layout_width="1dp"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="bottom"
+	                android:background="@color/light_gray" />
+	            
+		        <TextView
+		            android:id="@+id/tourist_state_pretour"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_margin="0dp"
+		            android:background="#FEB130"
+		            android:clickable="true"
+		            android:paddingTop="15dp"
+		        	android:paddingBottom="15dp"
+		            android:gravity="center"
+		            android:text="预游览"
+		            android:textColor="@color/white" />
+	        
+	        </LinearLayout>
+	</LinearLayout>
+
+	<include layout="@layout/view_loading" />
+	
+</FrameLayout>

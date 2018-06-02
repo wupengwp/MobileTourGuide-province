@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff000000"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/grouppurchase_details_iv_03"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/grouppurchase_tv_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"  
+                            android:singleLine="true"
+ 							android:ellipsize="end"                         
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/grouppurchase_tv_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f00"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/grouppurchase_tv_04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/grouppurchase_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_login_selector"
+                        android:padding="0dp"
+                        android:text="立即购买"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#02ffffff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/grouppurchase_tv_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/zhichi"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/grouppurchase_tv_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/zhichi"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/grouppurchase_tv_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/zhichi"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/grouppurchase_tv_07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/shijian"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/grouppurchase_tv_08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/yishou"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7dp"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/start_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone">
+
+                   <TextView
+                       android:id="@+id/grouppurchase_datestart"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:textColor="#fff"/>
+
+                    <TextView
+                        android:id="@+id/grouppurchase_dateend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+            
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/grouppurchase_tv_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/shijian"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/activity_group_shangpu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/style"
+                    android:drawableLeft="@drawable/shangjia"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="商家信息"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/and_item_imager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/style"
+                    android:src="@drawable/image_item_selector" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/grouppurchase_tv_09"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/showting"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/grouppurchase_details_iv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/dianhua"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/grouppurchase_tv_refund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#02ffffff"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#fff"
+                android:textSize="12sp" 
+                android:visibility="gone"/>
+            
+            
+             <View
+                 android:id="@+id/refund_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/grouppurchase_tv_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#02ffffff"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/grouppurchase_tv_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#02ffffff"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/dingdan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_login_selector"
+                android:text="我的订单"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="在此评价"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:id="@+id/pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="发送"
+                android:textColor="#FFB130" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f2f2f2" >
+	
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:text="上报"
+        android:gravity="center"
+        android:background="@color/style"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:text="详细地址是:"
+        android:textColor="@color/cancel"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/wc_pop_sb_wz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:hint="详细地址是" >
+        <requestFocus />
+    </EditText>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/style"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"/>
+    <Switch
+        android:id="@+id/wc_pop_sb_switch_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="是否有厕纸:"
+        android:textColor="@color/gray"
+        android:textOn="有"
+        android:textOff="无" />
+
+    <Switch
+        android:id="@+id/wc_pop_sb_switch_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="是否有残疾人设施:"
+        android:textColor="@color/gray"
+        android:textOn="有"
+        android:textOff="无" />
+
+</LinearLayout>

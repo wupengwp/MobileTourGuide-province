@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/activity_exercise_image_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:padding="10dp"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/exercise_top_text_01"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/view_gradient_top_line" />
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list_indent_activity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#0000" />
+    </LinearLayout>
+
+    <include layout="@layout/view_loading" />
+
+</FrameLayout>

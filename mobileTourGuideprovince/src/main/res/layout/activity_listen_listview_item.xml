@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/checkBox1"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:src="@drawable/shoucang1"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/activity_listen_listview_item_iv_01"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_noml" />
+
+    <TextView
+        android:id="@+id/activity_listen_listview_item_tv_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/activity_listen_listview_item_iv_02"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_beijingtubiao"
+        android:clickable="true"
+        android:padding="10dp"
+        android:src="@drawable/btn_home_selector_01" />
+
+</LinearLayout>

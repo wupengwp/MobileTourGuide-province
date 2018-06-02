@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/style"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <!-- 标题栏 -->
+
+    <TextView
+        android:id="@+id/title_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/title_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="5dp"
+        android:src="@null"
+         />
+
+    <ImageButton
+        android:id="@+id/title_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="5dp"
+        android:src="@null"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/title_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="收听记录"
+        android:textColor="@drawable/main_text_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

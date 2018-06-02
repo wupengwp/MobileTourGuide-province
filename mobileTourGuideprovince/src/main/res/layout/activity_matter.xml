@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/view_gradient_top_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/activity_matter_image_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#0000"
+            android:paddingTop="5dp"
+            android:src="@drawable/img_return_selector" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/matter_text_01"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_matter_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/matter_text_02"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/activity_matter_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_login_selector"
+        android:padding="5dp"
+        android:text="@string/matter_text_03"
+        android:textColor="#fff" />
+
+</LinearLayout>

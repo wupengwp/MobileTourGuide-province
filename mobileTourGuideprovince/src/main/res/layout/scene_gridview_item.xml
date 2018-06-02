@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/item_menu_selector"
+    android:padding="5dp"
+     >
+
+    <ImageView
+        android:id="@+id/scene_item_image_01"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:background="#00000000" >
+
+            <TextView
+                android:id="@+id/scene_item_text_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/scene_item_text_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/style"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/scene_item_text_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/style"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/scene_item_text_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/style"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/scene_item_image_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_home_selector_01"
+            android:background="@drawable/icon_beijingtubiao"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

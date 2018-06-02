@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="5dp"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="关键字键入"
+            android:padding="0dp"
+            android:textColor="#fff" >
+        </EditText>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:background="@color/style"
+            android:textColor="#fff"/>
+    </LinearLayout>
+   
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/banner_view"
+        android:layout_height="160dp" >
+        <com.appems.AppemsSSP.AppemsBanner
+            android:id="@+id/qbanner_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#20000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/home_of_late_attractions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homefragment_text_01"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/home_view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/home_image_but_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_01" />
+
+                <ImageButton
+                    android:id="@+id/home_image_but_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_06" />
+
+                <ImageButton
+                    android:id="@+id/home_image_but_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_02" />
+
+                <ImageButton
+                    android:id="@+id/home_image_but_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_03" />
+
+                <ImageButton
+                    android:id="@+id/home_image_but_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_04" />
+
+                <ImageButton
+                    android:id="@+id/home_image_but_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_beijingtubiao"
+                    android:src="@drawable/btn_home_selector_05" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</FrameLayout>

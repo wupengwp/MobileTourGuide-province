@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/activity_mysite_bottom_queren"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/bt_select_phone"
+        android:text="确认地址"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/activity_mysite_bottom_xinjian"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bt_select_phone"
+        android:layout_gravity="bottom"
+        android:text="新建地址"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

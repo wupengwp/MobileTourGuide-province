@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:text="退款内容:"
+        android:textColor="#fff" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:paddingLeft="5dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现金:"
+            android:textColor="#fff" />
+        <TextView 
+            android:id="@+id/activity_refund_textview_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="@color/style" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:text="退款原因"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预约不上"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="买多了"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="买错了"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="没有时间消费"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="评价不好"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/activity_refund_textview_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="后悔了,不想要了"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/activity_refund_checkbox_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_refund_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="更多不爽,必须吐槽"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:id="@+id/activity_refund_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_login_selector"
+        android:padding="5dp"
+        android:text="退             款"
+        android:textColor="#fff" />
+
+</LinearLayout>

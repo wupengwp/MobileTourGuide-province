@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/activity_scene_image_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/scenedetial_text_01"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/scenedetial_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/scenedetial_1_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/but_indent_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/scenedetial_text_02"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:id="@+id/scenedetial_2_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/but_indent_selector_3"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/scenedetial_text_03"
+                android:textColor="#fff" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/scenedetial_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" >
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/scenedetial_image"
+                            android:layout_width="160dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#fff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/scenedetial_text_06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:drawableLeft="@drawable/showting"
+                                android:textColor="@color/style"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/scenedetial_text_07"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/feature_details_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="在此评价"
+                        android:textColor="#fff" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/qinglun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:padding="10dp"
+                        android:text="发送"
+                        android:textColor="@color/style" />
+                </LinearLayout>
+            </ScrollView>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/scenedetial_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <ImageButton
+            android:id="@+id/composer_button_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="82dp"
+            android:layout_marginRight="10.667dp"
+            android:background="@drawable/icon_beijingtubiao"
+            android:src="@drawable/icon_xiangce"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_video"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60.666666666666667dp"
+            android:layout_marginRight="66.70765814495902dp"
+            android:background="@drawable/icon_beijingtubiao"
+            android:src="@drawable/xiangji"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_listen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8.666666666666667dp"
+            android:layout_marginRight="84dp"
+            android:background="@drawable/icon_beijingtubiao"
+            android:src="@drawable/hutong"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_show_hide_button"
+        android:layout_width="60dp"
+        android:layout_height="57.33333333333333dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/composer_buttons_show_hide_button_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_beijingtubiao"
+            android:src="@drawable/shizi" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/activity_feature_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#0000"
+                android:padding="10dp"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:id="@+id/feature_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/xian_image_01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_beijingtubiao"
+                android:clickable="true"
+                android:gravity="right"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_home_selector_01" />
+        </LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+        <ListView
+            android:id="@+id/featuredetails_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <include layout="@layout/view_loading" />
+
+</RelativeLayout>

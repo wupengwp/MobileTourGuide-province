@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.jiagu.mobile.tourguide"
+        minSdkVersion 14
+        targetSdkVersion 27
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation project(':pullToRefreshlibrary')
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation files('libs/alipaysdk.jar')
+    implementation files('libs/alipaysecsdk.jar')
+    implementation files('libs/alipayutdid.jar')
+    implementation files('libs/andbase.jar')
+    implementation files('libs/android-async-http-1.4.3.jar')
+    implementation files('libs/android_api_1.1_forsdk.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/fastjson-1.1.22.jar')
+    implementation files('libs/galaxy_mini.jar')
+    implementation files('libs/libammsdk.jar')
+    implementation files('libs/mframework.jar')
+    implementation files('libs/ShareSDK-Core-2.5.8.jar')
+    implementation files('libs/ShareSDK-QQ-2.5.8.jar')
+    implementation files('libs/ShareSDK-ShortMessage-2.5.8.jar')
+    implementation files('libs/universal-image-loader-1.9.3.jar')
+}

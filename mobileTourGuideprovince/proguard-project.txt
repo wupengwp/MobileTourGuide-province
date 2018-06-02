@@ -1,0 +1,123 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keep class cn.sharesdk.onekeyshare.** { *; }
+-keep class cn.sharesdk.onekeyshare.theme.classic.** { *; }
+-keep class cn.sharesdk.onekeyshare.theme.skyblue.** { *; }
+
+-keep class com.android.volley.** { *; }
+-keep class com.android.volley.toolbox.** { *; }
+
+-keep class com.jiagu.mobile.zhifu.** { *; }
+-keep class com.jiagu.mobile.zhifu.adapter.** { *; }
+-keep class com.jiagu.mobile.zhifu.bean.** { *; }
+
+-keep class com.jiagu.mobile.daohang.** { *; }
+
+-keep class com.jiagu.mobile.tourguide.activities.** { *; }
+-keep class com.jiagu.mobile.tourguide.activities.bases.** { *; }
+-keep class com.jiagu.mobile.tourguide.adapter** { *; }
+-keep class com.jiagu.mobile.tourguide.application.** { *; }
+-keep class com.jiagu.mobile.tourguide.bean.** { *; }
+-keep class com.jiagu.mobile.tourguide.fragments.** { *; }
+-keep class com.jiagu.mobile.tourguide.utils.** { *; }
+-keep class com.jiagu.mobile.tourguide.widget.** { *; }
+-keep class com.jiagu.mobile.tourguide.widget.progressbar.** { *; }
+-keep class org.json.** { *; }
+
+
+-libraryjars libs/libammsdk.jar
+
+-libraryjars libs/alipaysdk.jar
+-libraryjars libs/alipaysecsdk.jar
+-libraryjars libs/alipayutdid.jar
+
+-libraryjars libs/mframework.jar
+-libraryjars libs/ShareSDK-Core-2.5.8.jar
+-libraryjars libs/ShareSDK-ShortMessage-2.5.8.jar
+-libraryjars libs/ShareSDK-QQ-2.5.8.jar
+#-libraryjars libs/ShareSDK-Wechat-2.5.8.jar
+#-libraryjars libs/ShareSDK-Wechat-Core-2.5.8.jar
+#-libraryjars libs/ShareSDK-Wechat-Moments-2.5.8.jar
+
+-libraryjars libs/andbase.jar
+-libraryjars libs/android-async-http-1.4.3.jar
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/BaiduLBS_Android.jar
+-libraryjars libs/fastjson-1.1.22.jar
+-libraryjars libs/universal-image-loader-1.9.3.jar
+
+-libraryjars libs/BaiduLBS_Android.jar
+-libraryjars libs/android_api_1.1_forsdk.jar
+-libraryjars libs/galaxy_mini.jar
+
+
+-libraryjars libs/armeabi/libBaiduMapSDK_v3_4_0_15.so
+-libraryjars libs/armeabi/libapp_BaiduNaviApplib_v1_0_0.so
+-libraryjars libs/armeabi/libCNPackage.so
+-libraryjars libs/armeabi/libejTTS.so
+-libraryjars libs/armeabi/liblocnaviSDK.so
+-libraryjars libs/armeabi/liblocSDK5.so
+
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.** { *; }
+
+-dontwarn com.baidu.**
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;} 
+-keep class com.sinovoice.ejtts.**{*;} 
+
+
+-dontwarn com.loopj.android.**
+-keep class com.loopj.android.** { *; }
+
+#andbase 
+-dontwarn com.ab.** 
+-keep class com.ab.**{*;}
+
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-keep class **.R$* {*;}
+-keep class **.R{*;}
+-dontwarn cn.sharesdk.**
+-dontwarn **.R$*
+
+#支付宝
+-keep class com.alipay.android.app.IAliPay{*;}
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.lib.ResourceMap{*;}
+
+#-keep public class * implements java.io.Serializable {
+#        public *;
+#}
+
+#-keepclassmembers class * implements java.io.Serializable {
+#    static final long serialVersionUID;
+#    private static final java.io.ObjectStreamField[] serialPersistentFields;
+#    private void writeObject(java.io.ObjectOutputStream);
+#    private void readObject(java.io.ObjectInputStream);
+#    java.lang.Object writeReplace();
+#    java.lang.Object readResolve();
+#}
+
+
+-keepattributes Signature

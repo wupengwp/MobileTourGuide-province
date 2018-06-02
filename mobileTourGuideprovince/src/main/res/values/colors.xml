@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="style">#FFB130</color>
+    <color name="click">#F99406</color>
+    <color name="ok">#F99406</color>
+    <color name="ok_click">#F18D01</color>
+    <color name="cancel">#ED6C44</color>
+    <color name="cancel_click">#E65529</color>
+    <color name="white_transparent">#90FFFFFF</color>
+    <color name="text">#615D5E</color>
+    <color name="text_click">#BD6F02</color>
+    <color name="loading_mask_bg">#30000000</color>
+    <color name="haed_border">#D0CCC8</color>
+    <color name="login_text">#51380E</color>
+    <color name="login_text_click">#7a6e67</color>
+    <color name="login_click">#7a6e67</color>
+	<color name="menu_item_click">#10000000</color>
+	<color name="hyaline">#f000</color>
+	<color name="music_bg">#EDEDED</color>
+	<color name="light_gray">#CCCCCC</color>
+	<color name="gray">#999999</color>
+	<color name="music_bg_click">#84B0E1</color>
+	<color name="audio_player_bg">#FEB130</color>
+	<color name="help_01">#e87e04</color>
+	<color name="help_02">#f9690e</color>
+	<color name="help_03">#f39c12</color>
+	<color name="help_04">#f9bf3b</color>
+	<color name="help_05">#eb9532</color>
+	<color name="navpage">#FFE1E8EB</color>
+	 <color name="text_title">#242a2d</color>
+	 <color name="main_color">#eb8c21</color>
+	 <color name="alertdialog_line">#c6c6c6</color>
+	 <color name="actionsheet_blue">#037BFF</color>
+	 
+	   <color name="o">#ddeeee</color>
+    <color name="o1">#ffffdd</color>
+    <color name="calendar_color_green">#60c677</color>
+    <color name="calendar_color_orange">#fc6c00</color>
+    <color name="calendar_color_black">#666666</color>
+    <color name="calendar_color_gray">#cccccc</color>
+    <color name="calendar_color_month_title">#526276</color>
+    <color name="calendar_color_white">#ffffff</color>
+</resources>

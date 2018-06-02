@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+      android:background="@drawable/msp_demo_title_bg"  >
+ 	<ImageView
+                android:id="@+id/iv_return_fromzfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+               	android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/img_return_selector" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:src="@drawable/msp_demo_title"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.jiagu.mobile.zhifu.ExternalFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

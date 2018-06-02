@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <fragment
+        android:id="@+id/fragement_home"
+        android:name="com.jiagu.mobile.tourguide.fragments.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragement_personal_center"
+        android:name="com.jiagu.mobile.tourguide.fragments.PersonalFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragement_settings_center"
+        android:name="com.jiagu.mobile.tourguide.fragments.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

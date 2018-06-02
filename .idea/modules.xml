@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MobileTourGuide-province.iml" filepath="$PROJECT_DIR$/MobileTourGuide-province.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobileTourGuideprovince/mobileTourGuideprovince.iml" filepath="$PROJECT_DIR$/mobileTourGuideprovince/mobileTourGuideprovince.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefreshlibrary/pullToRefreshlibrary.iml" filepath="$PROJECT_DIR$/pullToRefreshlibrary/pullToRefreshlibrary.iml" />
+    </modules>
+  </component>
+</project>

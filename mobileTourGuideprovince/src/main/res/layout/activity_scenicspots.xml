@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/activity_scenicspots_image_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:id="@+id/activity_scenicspots_image_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/scenicspots_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numColumns="2" />
+    </LinearLayout>
+	<include layout="@layout/view_loading" />
+</FrameLayout>

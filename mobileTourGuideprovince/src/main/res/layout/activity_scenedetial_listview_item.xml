@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jiagu.mobile.tourguide"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/item_menu_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30000000"
+        android:orientation="horizontal" >
+
+        <com.jiagu.mobile.tourguide.widget.CircleImageView
+            android:id="@+id/scenedetial_listview_iv_01"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_default_head"
+            app:border_color="@color/haed_border" />
+
+        <TextView
+            android:id="@+id/scenedetial_listview_tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/scenedetial_listview_tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/scenedetial_listview_tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scenedetial_listview_tv_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</LinearLayout>

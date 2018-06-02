@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="#00000000"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/shoucang"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/orderfrom_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="潇潇"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderfrom_tv_dianhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18259484457"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:textColor="#fff"
+                android:paddingRight="20dip"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderfrom_tv_dizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收货地址:某某市某某区某某镇天坛花园小区3单元8楼808号"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

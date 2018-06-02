@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/audio_player_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/audio_player_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_pause"
+        android:text="播放" />
+
+   <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/scenic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:text="ceshi"
+            android:textSize="12sp" />
+
+     <!--   <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" > 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >-->  
+
+                <SeekBar
+                    android:id="@+id/music_player_seekbar"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"   
+                    android:layout_centerVertical="true"		    
+                    android:layout_marginBottom="0dp"                  
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="0dp"
+                    android:max="100"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="0dp"
+                    android:progressDrawable="@drawable/bg_bar"
+                    android:thumb="@drawable/thumb_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        android:id="@+id/tv_playback_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"                   
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="00:01"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+               <!-- </LinearLayout>
+             </LinearLayout>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/pop_imagebutton_daohang"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/btn_action_location"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="3dp"
+        android:visibility="visible"
+        android:background="#00000000" />
+
+</LinearLayout>

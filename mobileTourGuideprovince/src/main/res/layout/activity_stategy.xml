@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jiagu.mobile.tourguide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+
+        <LinearLayout
+            android:id="@+id/stategy_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/stategy_image_but_01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:src="@drawable/img_return_selector" />
+
+            <com.jiagu.mobile.tourguide.widget.CircleImageView
+                android:id="@+id/login_user_logo_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_default_head"
+                app:border_color="@color/haed_border" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/text_personal_job"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/personal_top_name"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_personal_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/personal_top_job"
+                    android:textColor="#feb130" />
+
+                <ImageView
+                    android:id="@+id/stategy_imager_but_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/text_personal_name"
+                    android:layout_marginRight="10dp"
+                    android:background="#0000"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_gaimima" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stategy_image_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/activity_stategy_image_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:padding="5dp"
+                android:src="@drawable/img_return_selector" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="攻略"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/view_gradient_top_line" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/strategy_pullrefesh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#0000" />
+    </LinearLayout>
+
+    <include layout="@layout/view_loading" />
+
+</FrameLayout>

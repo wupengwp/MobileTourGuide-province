@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/view_gradient_top_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/activity_help_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#0000"
+            android:padding="10dp"
+            android:src="@drawable/img_return_selector" />
+
+        <TextView
+            android:id="@+id/help_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/help_text_01"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/help_linearlayout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/help_textView_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/help_01"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/btn_yuyin_normal"
+                        android:gravity="center"
+                        android:padding="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/help_text_02"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/help_textView_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/help_02"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/btn_jingguan_normal"
+                        android:gravity="center"
+                        android:padding="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/help_text_03"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/help_textView_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/help_03"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/btn_tese_normal"
+                        android:gravity="center"
+                        android:padding="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/help_text_04"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/help_textView_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/help_04"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/btn_huodong_normal"
+                        android:gravity="center"
+                        android:padding="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/help_text_05"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/help_textView_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/help_05"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/btn_gonglue_normal"
+                        android:gravity="center"
+                        android:padding="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/help_text_06"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+           <!--  <TextView
+                android:id="@+id/help_textView_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/help_02"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_gouwu"
+                android:gravity="center"
+                android:padding="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="50dp"
+                android:text="@string/help_text_07"
+                android:textColor="#fff"
+                android:textSize="24sp" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/help_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>

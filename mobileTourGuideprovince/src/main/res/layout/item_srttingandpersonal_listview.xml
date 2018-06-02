@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:orientation="horizontal"
+    android:background="@drawable/item_menu_selector" >
+    <ImageView 
+        android:id="@+id/menu_item_imager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginLeft="20dp"
+       	android:layout_marginRight="10dp"
+       	android:layout_gravity="center_vertical|left"
+       	
+        />
+	<TextView 
+	    android:id="@+id/menu_item_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="65dp"
+	    android:textSize="20sp"
+	    android:layout_weight="1"
+	    android:gravity="center_vertical|left"
+	    android:textColor="#fff"/>
+	
+	<TextView 
+	    android:id="@+id/menu_item_text_02"
+	    android:layout_width="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_height="65dp"
+	    android:textSize="16sp"
+	    android:gravity="center_vertical|right"
+	    android:visibility="gone"
+	    android:text="已是最新版本"
+	    android:textColor="#fff"/>
+
+	<ImageView
+	    android:id="@+id/and_item_imager"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:src="@drawable/image_item_selector"/>
+</LinearLayout>
